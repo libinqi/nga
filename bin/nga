@@ -130,8 +130,6 @@ function createApplication(app_name, path) {
         "electron:mac": "npm run build:prod && node package.js --asar --platform=darwin --arch=x64",
         "lint": "npm run tslint \"src/**/*.ts\"",
         "node": "node",
-        "postinstall": "npm run webdriver:update",
-        "postversion": "git push && git push --tags",
         "preclean:install": "npm run clean",
         "preversion": "npm test",
         "rimraf": "rimraf",
